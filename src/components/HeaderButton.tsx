@@ -15,18 +15,28 @@ export const HeaderButton: FC<ButtonProps> = ({
   ...props
 }) => {
   let buttonStyle ="bg_white";
+  let underBarStyle= "";
   if (color === "bg_white"){
- buttonStyle = " bg-white  px-2 py-2 text-[#E93A3A] text-xl  bordercolor-[#E93A3A]  border-b "//ここにボタンのcssの差分を記述
+ buttonStyle = " bg-white text-[#E93A3A]  bordercolor-[#E93A3A]  "//ここにボタンのcssの差分を記述
   }else if (color === "bg_red"){
-    buttonStyle = "bg-red text-blue-200";//ここにボタンのcssの差分を記述
+    buttonStyle = "bg-[#E93A3A] text-white " ;//ここにボタンのcssの差分を記述
   }
+
   return (
-    <button
-    className={`${buttonStyle} font-[Jaro] semi-rounded hover:opacity-60 `}//共通スタイルはこの中で良い
-      {...props}
-    >
-     
+    <button>
+     <div className = {`${buttonStyle} 
+font-[Jaro] 
+rounded-lg
+ px-2 py-1
+text-xl 
+hover:opacity-60 `}  {...props}
+>
       {children}
+    </div>
+ { color === 'bg_white' && (
+    <div className="w-[80%] border-b-6 text-[#E93A3A] mx-auto mt-0.50"></div>
+  )}
+
     </button>
   );
 };

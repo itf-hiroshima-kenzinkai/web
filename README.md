@@ -1,6 +1,6 @@
 # web
 webページのリポジトリです
-
+git clone して 、 npm install 
 # Astro Starter Kit: Basics
 
 ```sh

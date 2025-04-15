@@ -1,4 +1,5 @@
 # web
+
 webページのリポジトリです。
 git clone して 、 npm install してください。
 mainブランチには直接プッシュせず、作業内容がわかるブランチ名(ex:feat/mainpage など)を切って、作業完了したらプルリクを立てておいてください。
@@ -51,6 +52,3 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-
-

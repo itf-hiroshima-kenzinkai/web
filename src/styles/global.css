@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
-@import "tailwindcss";
-
+@import 'tailwindcss';
 
 .button {
-    font-family: 'Jaro', sans-serif;
-  }
+  font-family: 'Jaro', sans-serif;
+}

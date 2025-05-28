@@ -1,22 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import '../styles/global.css'
+const pagetitle = '筑波大学広島県人会'
 ---
 
-<Layout>
+<Layout pagetitle = {pagetitle}>
   <div class="flex flex-col justify-center items-center">
     <div class="flex justify-center">
-      <img src="/mainpic.png" class="w-[90%]" />
+      <img src="/mainpic.png" class="w-[85%]" />
     </div>
 
-    <div class="w-[80%] flex flex-col items-center justify-center bg-[#E93A3A] mt-4 rounded-4xl">
-      <h2 class="my-12 font-[Jaro] justify-center text-7xl text-white tracking-wider">ABOUT</h2>
-      <div class="flex w-full px-16">
-        <div class="flex w-2/5">
+    <div class=" w-[80%] flex flex-col items-center justify-center bg-[#E93A3A] mt-4 rounded-4xl">
+
+      <h2 class="md : font-[Jaro] justify-center text-white  text-4xl  md:tracking-wider md:my-12 md:text-7xl  ">ABOUT</h2>
+
+      <div class="md: flex w-full px-16">
+
+        <div class="flex hidden  md:w-2/5 md:block">
           <img src="/test.png" class="object-contain h-auto w-full mb-8" />
         </div>
 
-        <div class="flex flex-col text-white text-xl mx-12 my-8 tracking-wider leading-loose w-3/5">
+        <div class="flex flex-col text-white  tracking-wider  w-full md:w-3/5  mx-0 my-0 text-sm md:text-xl  md:leading-loose  md:mx-12 md:my-8 ">
           <p>国境の長いトンネルを抜けると雪国であった。夜の底が白くなった。信号所に汽車が止まった。</p>
           <p>
             向側の座席から娘が立って来て、島村の前のガラス窓を落した。雪の冷気が流れこんだ。娘は窓いっぱいに乗り出して、遠くへ呼ぶように、

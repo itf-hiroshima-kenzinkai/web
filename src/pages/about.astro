@@ -1,36 +1,40 @@
 ---
-import ResizeableBox from '../components/ResizeableBox.astro';
-import Layout  from "../layouts/Layout.astro";
+import ResizeableBox from '../components/ResizeableBox.astro'
+import Layout from '../layouts/Layout.astro'
 import '../styles/global.css'
 const pagetitle = '連絡先'
 ---
-<Layout pagetitle = {pagetitle}>
-   <body class="bg-white text-red-600">
+
+<Layout pagetitle={pagetitle}>
+  <body class="bg-white text-red-600">
     <main class="max-w-6xl mx-auto px-6 py-12">
       <p class="w-[85%] font-[Jaro] text-8xl text-[#E93A3A] mb-8">A B O U T</p>
-        
-        <div class="flex flex-col md:flex-row gap-8 mb-8">
-            <img src="/public/ex1.png" alt="Description of image 1" class="rounded-2xl shadow-lg w-[28rem] h-[12rem] object-cover" />
-            <ResizeableBox size="xl" title="概要" extra="flex-1">
-                <p>広島県人会とは・・・・・・・・・・</p>
-                <p>・・・・・・・・・・・・・・・・・</p>
-                <p>・・・・・・・・・・・・・・・・・</p>
-            </ResizeableBox>
-        </div>
-        
-        <div class="flex flex-col md:flex-row gap-8 mb-8">
-            <ResizeableBox size="lg" title="学園祭">
-                <p>学園祭の様子・・・・・・・・・・・</p>
-                <p>・・・・・・・・・・・・・・・・・</p>
-            </ResizeableBox>
-             <img src="/public/ex1.png"  class="rounded-2xl shadow-lg  w-96 h-56 object-cover" />
-        </div>
-        
-        <div class="flex flex-col md:flex-row gap-8">
-             <img src="/public/ex1.png" class="rounded-2xl shadow-lg w-64 h-40 object-cover" />
-             <img src="/public/ex1.png"  class="rounded-2xl shadow-lg w-[28rem] h-48 object-cover" />
-        </div>
 
+      <div class="flex flex-col md:flex-row gap-8 mb-8">
+        <img
+          src="/public/ex1.png"
+          alt="Description of image 1"
+          class="rounded-2xl shadow-lg w-[28rem] h-[12rem] object-cover"
+        />
+        <ResizeableBox size="xl" title="概要" extra="flex-1">
+          <p>広島県人会とは・・・・・・・・・・</p>
+          <p>・・・・・・・・・・・・・・・・・</p>
+          <p>・・・・・・・・・・・・・・・・・</p>
+        </ResizeableBox>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-8 mb-8">
+        <ResizeableBox size="lg" title="学園祭">
+          <p>学園祭の様子・・・・・・・・・・・</p>
+          <p>・・・・・・・・・・・・・・・・・</p>
+        </ResizeableBox>
+        <img src="/public/ex1.png" class="rounded-2xl shadow-lg w-96 h-56 object-cover" />
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-8">
+        <img src="/public/ex1.png" class="rounded-2xl shadow-lg w-64 h-40 object-cover" />
+        <img src="/public/ex1.png" class="rounded-2xl shadow-lg w-[28rem] h-48 object-cover" />
+      </div>
     </main>
   </body>
 </Layout>

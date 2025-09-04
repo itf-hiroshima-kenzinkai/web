@@ -1,12 +1,12 @@
 ---
-import ContactCard from "../components/ContactCard.astro";
-import Layout  from "../layouts/Layout.astro";
+import ContactCard from '../components/ContactCard.astro'
+import Layout from '../layouts/Layout.astro'
 import '../styles/global.css'
 const pagetitle = '連絡先'
 ---
 
-<Layout pagetitle = {pagetitle}>
-   <body class="bg-white text-red-600">
+<Layout pagetitle={pagetitle}>
+  <body class="bg-white text-red-600">
     <main class="max-w-6xl mx-auto px-6 py-12">
       <p class="w-[85%] font-[Jaro] text-8xl text-[#E93A3A] mb-8">C O N T A C T</p>
 
@@ -14,7 +14,6 @@ const pagetitle = '連絡先'
         <ContactCard title="Twitter" link="https://twitter.com/xxx" name="mdi:twitter" />
         <ContactCard title="Instagram" link="https://instagram.com/xxx" name="mdi:instagram" />
         <ContactCard title="Mail" link="mailto:example@mail.com" name="mdi:email" />
-       
       </div>
     </main>
   </body>

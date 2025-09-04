@@ -1,8 +1,8 @@
 ---
 import '../styles/global.css'
-const { buttonname } = Astro.props
+const { buttonname ,link } = Astro.props
 ---
-
+<a href={link} class="inline-block">
 <button
   class="font-[Jaro] text-2xl text-[#E93A3A]
   bg-white relative rounded-xl px-2
@@ -13,3 +13,4 @@ const { buttonname } = Astro.props
     {buttonname}
   </div>
 </button>
+</a>

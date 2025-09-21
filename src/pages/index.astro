@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import '../styles/global.css'
+import IndexContentCard from '../components/IndexContentCard.astro'
 const pagetitle = '筑波大学広島県人会'
 ---
 
@@ -9,17 +10,14 @@ const pagetitle = '筑波大学広島県人会'
     <div class="flex justify-center flex-col items-center">
       <img src="/mainpic.png" class="w-[85%] hidden md:block" />
 
-      <p class="w-[85%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">TSUKUBA UNI</p>
+      <p class="w-[85%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">Univ.of TSUKUBA</p>
       <img src="/mobile_mainpic.png" class="w-[85%] md:hidden" />
       <p class="w-[85%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">HIROSHIMA</p>
       <p class="w-[85%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">KENZINKAI</p>
     </div>
 
-    <div class="w-[80%] flex flex-col items-center justify-center bg-[#E93A3A] mt-4 rounded-4xl">
-      <h2 class="md : font-[Jaro] justify-center text-white text-4xl md:tracking-wider md:my-12 md:text-7xl">ABOUT</h2>
-
-      <div class="flex flex-col md:flex-row w-full px-16">
-        <div class="hidden md:w-2/5 md:block">
+    <IndexContentCard title = {"ABOUT"}>
+      <div class="hidden md:w-2/5 md:block">
           <img src="/about_image_noon.jpg" class="object-contain h-auto w-full mb-8" />
         </div>
         <div class="md:hidden w-full mb-8">
@@ -36,10 +34,16 @@ const pagetitle = '筑波大学広島県人会'
           <p>広島出身者はもちろん、カープが好きな人、広島に興味がある人も大歓迎です！</p>
 
           <div class="items-end">
-            <h3 class="font-[Jaro] text-right text-4xl">MORE…→</h3>
+            <p class="font-[Jaro] text-right text-4xl">MORE…→</p>
           </div>
         </div>
-      </div>
-    </div>
+    </IndexContentCard>
+
+    <IndexContentCard title = {"GOODS"}>
+
+    </IndexContentCard>
+    <IndexContentCard title = {"50thPAGE"}>
+      
+    </IndexContentCard>
   </div>
 </Layout>

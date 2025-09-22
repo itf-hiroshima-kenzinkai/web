@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
-import ProductCard from './GoodsCard';
-import { goodsData } from '../data/goods'; 
-import { Swiper, SwiperSlide } from 'swiper/react'; 
-import { Pagination, Autoplay } from 'swiper/modules'; 
-
+import React, { useState } from 'react'
+import ProductCard from './GoodsCard'
+import { goodsData } from '../data/goods'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Autoplay } from 'swiper/modules'
 
 const GoodsCarousel: React.FC = () => {
- return (
-   <div className="container mx-auto px-4 py-8">
-      
-      
-
+  return (
+    <div className="container mx-auto px-4 py-8">
       <Swiper
         modules={[Pagination, Autoplay]}
         slidesPerView={3}
@@ -18,7 +14,7 @@ const GoodsCarousel: React.FC = () => {
         loop={true}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: false
         }}
         pagination={{
           el: '#goods-carousel-pagination',
@@ -39,7 +35,7 @@ const GoodsCarousel: React.FC = () => {
       </Swiper>
       <div id="goods-carousel-pagination" className="flex justify-center mt-4"></div>
     </div>
-  );
-};
+  )
+}
 
-export default GoodsCarousel;
+export default GoodsCarousel

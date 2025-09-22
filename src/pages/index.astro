@@ -17,58 +17,42 @@ const pagetitle = '筑波大学広島県人会'
       <p class="w-[85%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">KENZINKAI</p>
     </div>
 
-    <IndexContentCard title = {"ABOUT"}>
-        <div class="hidden md:w-2/5 md:block">
-          <img src="/about_image_noon.jpg" class="object-contain h-auto w-full mb-8" />
-        </div>
-        
-        <div class="md:hidden w-full mb-8">
-          <img src="/about_image_noon.jpg" class="object-contain h-auto w-full" />
-        </div>
-
-        <div
-          class="flex-col text-white tracking-wider w-full md:w-3/5 mx-0 my-0 text-sm md:text-xl md:leading-loose md:mx-12 md:my-8"
-        >
-          <p>筑波大学広島県人会は、50年の歴史があり、広島出身の学生を中心に活動している公式サークルです。</p>
-          <p>主な活動は、やどかり祭や雙峰祭で広島のお好み焼きを販売すること！</p>
-          <p>みんなで力を合わせてお好み焼きを焼き、その後の打ち上げで盛り上がるのは最高の思い出になります。</p>
-          <p>その他にも、有志でカープ観戦に行くなど、学年や学類を越えてアットホームな雰囲気で交流しています。</p>
-          <p>広島出身者はもちろん、カープが好きな人、広島に興味がある人も大歓迎です！</p>
-
-          <div class="items-end">
-            <p class="font-[Jaro] text-right text-4xl">MORE…→</p>
-          </div>
-        </div>
-    </IndexContentCard>
-  
-    <IndexContentCard title = {"GOODS"}>
-      <div class="flex  flex-col justify-center w-full">
-           <div class="flex justify-center w-full">
-        <GoodsCard
-          imageUrl="/path/to/image1.png"
-          price={3000}
-          description="広島県人会限定ぬいぐるみ"
-        />
-        <GoodsCard
-          imageUrl="/path/to/image2.png"
-          price={500}
-          description="広島県人会限定缶バッチ"
-        />
-        <GoodsCard
-          imageUrl="/path/to/image3.png"
-          price={2500}
-          description="広島県人会筑波大学コラボタオル"
-        />
+    <IndexContentCard title={'ABOUT'}>
+      <div class="hidden md:w-2/5 md:block">
+        <img src="/about_image_noon.jpg" class="object-contain h-auto w-full mb-8" />
       </div>
-      
-      <div class="flex justify-center mt-4 space-x-2">
-       //ここに将来的にスクロールの白ボタンを置く
+
+      <div class="md:hidden w-full mb-8">
+        <img src="/about_image_noon.jpg" class="object-contain h-auto w-full" />
       </div>
-    </div>
+
+      <div
+        class="flex-col text-white tracking-wider w-full md:w-3/5 mx-0 my-0 text-sm md:text-xl md:leading-loose md:mx-12 md:my-8"
+      >
+        <p>筑波大学広島県人会は、50年の歴史があり、広島出身の学生を中心に活動している公式サークルです。</p>
+        <p>主な活動は、やどかり祭や雙峰祭で広島のお好み焼きを販売すること！</p>
+        <p>みんなで力を合わせてお好み焼きを焼き、その後の打ち上げで盛り上がるのは最高の思い出になります。</p>
+        <p>その他にも、有志でカープ観戦に行くなど、学年や学類を越えてアットホームな雰囲気で交流しています。</p>
+        <p>広島出身者はもちろん、カープが好きな人、広島に興味がある人も大歓迎です！</p>
+
+        <div class="items-end">
+          <p class="font-[Jaro] text-right text-4xl">MORE…→</p>
+        </div>
+      </div>
     </IndexContentCard>
 
-    <IndexContentCard title = {"50thPAGE"}>
-      制作中
+    <IndexContentCard title={'GOODS'}>
+      <div class="flex flex-col justify-center w-full">
+        <div class="flex justify-center w-full">
+          <GoodsCard imageUrl="/path/to/image1.png" price={3000} description="広島県人会限定ぬいぐるみ" />
+          <GoodsCard imageUrl="/path/to/image2.png" price={500} description="広島県人会限定缶バッチ" />
+          <GoodsCard imageUrl="/path/to/image3.png" price={2500} description="広島県人会筑波大学コラボタオル" />
+        </div>
+
+        <div class="flex justify-center mt-4 space-x-2">//ここに将来的にスクロールの白ボタンを置く</div>
+      </div>
     </IndexContentCard>
+
+    <IndexContentCard title={'50thPAGE'}> 制作中 </IndexContentCard>
   </div>
 </Layout>

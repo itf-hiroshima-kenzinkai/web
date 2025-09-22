@@ -4,13 +4,16 @@ const ProductCard: React.FC<GoodsItem> = ({ imageUrl, price, description, linkUr
   return (
     <div >
       <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="block group">
-        <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+        <div className=" bg-[#E93A3A] overflow-hidden ">
           <div className="w-full aspect-square">
             <img src={imageUrl} alt={description} className="object-cover w-full " />
           </div>
           <div className="p-4 text-center">
-            <p className="text-lg font-bold text-gray-800">{price.toLocaleString()} 円 (税込)</p>
-            <p className="text-sm text-gray-600 mt-1">{description}</p>
+           <p className="text-3xl font-bold text-white text-left">
+              <span>{price.toLocaleString()}</span> 
+              <span className="text-xl"> 円 (税込)</span> 
+            </p>
+            <p className="text-xl text-white mt-1 text-left">{description}</p>
           </div>
         </div>
       </a>

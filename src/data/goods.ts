@@ -3,37 +3,37 @@ import type { GoodsItem } from '../models/goods';
 export const goodsData: GoodsItem[] = [
   {
     id: 1,
-    imageUrl: "/public/ex1.png" ,
+    imageUrl: "/ex1.png" ,
     price: 22000,
-    description: "カープ「空調服」(R) ファンバッテ...",
-    linkUrl: "/public/ex1.png" 
+    description: "test",
+    linkUrl: "https://google.com" 
   },
   {
     id: 2,
-    imageUrl: "/images/goods-earrings.jpg",
+    imageUrl:  "/goods_ex1.webp",
     price: 2500,
-    description: "Carpマヤイアリング(スリイリー/ヘ...",
-    linkUrl: "https://example.com/item/2"
+    description: "おこのみやき",
+   linkUrl: "https://google.com" 
   },
   {
     id: 3,
-    imageUrl: "/images/goods-tshirt-ver3.jpg",
+    imageUrl: "/goods_ex2.webp",
     price: 3000,
-    description: "ファビアンTシャツ ver.3",
-    linkUrl: "https://example.com/item/3"
+    description: "カープ坊や",
+    linkUrl:"https://google.com" 
   },
   {
     id: 4,
-    imageUrl: "/images/goods-tshirt-ver2.jpg",
+    imageUrl: "/goos_ex3.webp",
     price: 3000,
-    description: "ファビアンTシャツ ver.2",
-    linkUrl: "https://example.com/item/4"
+    description: "もみじまんじゅう",
+    linkUrl: "https://google.com" 
   },
   {
     id: 5,
-    imageUrl: "/images/goods-bat.jpg",
+    imageUrl: "/019.webp",
     price: 750,
-    description: "カンフーバット(ロゴ)",
-    linkUrl: "https://example.com/item/5"
+    description: "くまのふで",
+    linkUrl: "https://google.com" 
   }
 ];

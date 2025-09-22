@@ -1,2 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
 @import 'tailwindcss';
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+
+.swiper-pagination {
+  height:0px;
+  /*位置を調整*/
+  bottom: 100 !important;
+}

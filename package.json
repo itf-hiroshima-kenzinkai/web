@@ -10,15 +10,18 @@
     "lint": "npx prettier --write ."
   },
   "dependencies": {
-    "@astrojs/react": "^4.2.3",
+    "@astrojs/react": "^4.3.1",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/vite": "^4.0.17",
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^19.0.4",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
     "astro": "^5.5.5",
     "astro-icon": "^1.1.5",
     "prettier-plugin-astro": "^0.14.1",
-    "react-dom": "^19.1.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-swiper": "^0.1.5",
+    "swiper": "^12.0.2",
     "tailwindcss": "^4.0.17"
   },
   "devDependencies": {

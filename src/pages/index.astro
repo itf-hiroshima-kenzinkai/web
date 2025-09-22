@@ -9,6 +9,7 @@ const pagetitle = '筑波大学広島県人会'
 <Layout pagetitle={pagetitle}>
   <div class="flex flex-col justify-center items-center">
     <div class="flex justify-center flex-col items-center">
+       
       <img src="/mainpic.png" class="w-[85%] hidden md:block" />
 
       <p class="w-[85%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">Univ.of TSUKUBA</p>
@@ -18,6 +19,7 @@ const pagetitle = '筑波大学広島県人会'
     </div>
 
     <IndexContentCard title={'ABOUT'}>
+      <img src="/chibiCharaMomiji.png" class="absolute top-5 right-55 translate-x-full -translate-y-full w-1/8" />
       <div class="hidden md:w-2/5 md:block">
         <img src="/about_image_noon.jpg" class="object-contain h-auto w-full mb-8" />
       </div>
@@ -42,6 +44,7 @@ const pagetitle = '筑波大学広島県人会'
     </IndexContentCard>
 
     <IndexContentCard title={'GOODS'}>
+       <img src="/chibiCharaLemon.png" class="absolute top-0 left-1/6 -translate-y-1/2 w-1/4 h-auto z-10 " />
       <GoodsCarousel client:only="react" />
     </IndexContentCard>
 

@@ -16,3 +16,13 @@
 @theme {
   --font-zenmaru: "Zen Maru Gothic", sans-serif; 
 }
+
+.text-stroke-red {
+  color: white; 
+  text-shadow: 
+    1.5px 1.5px 0 #E93A3A, 
+    -1.5px 1.5px 0 #E93A3A, 
+    1.5px -1.5px 0 #E93A3A,
+    -1.5px -1.5px 0 #E93A3A;
+
+}

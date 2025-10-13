@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import '@fontsource/zen-maru-gothic';
 @import 'tailwindcss';
 @import 'swiper/css';
 @import 'swiper/css/pagination';
+
 
 .swiper-pagination-bullet {
   background: #808080 !important;
@@ -10,4 +12,7 @@
 
 .swiper-pagination-bullet-active {
   background: #ffffff !important;
+}
+@theme {
+  --font-zenmaru: "Zen Maru Gothic", sans-serif; 
 }

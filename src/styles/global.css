@@ -18,11 +18,14 @@
 }
 
 .text-stroke-red {
-  color: white; 
-  text-shadow: 
-    1.5px 1.5px 0 #E93A3A, 
-    -1.5px 1.5px 0 #E93A3A, 
-    1.5px -1.5px 0 #E93A3A,
-    -1.5px -1.5px 0 #E93A3A;
-
+color: #fff;
+ text-shadow    : 
+       2px  2px 1px #E93A3A,
+      -2px  2px 1px #E93A3A,
+       2px -2px 1px #E93A3A,
+      -2px -2px 1px #E93A3A,
+       2px  0px 1px #E93A3A,
+       0px  2px 1px #E93A3A,
+      -2px  0px 1px #E93A3A,
+       0px -2px 1px #E93A3A;
 }

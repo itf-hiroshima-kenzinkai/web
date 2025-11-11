@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import HeaderButton from '../components/HeaderButton.astro'
+import Hamburger from './Hamburger.astro';
 ---
 
 <div class="flex gap-4 hidden md:block">
@@ -9,3 +10,10 @@ import HeaderButton from '../components/HeaderButton.astro'
   <HeaderButton buttonname="50th PAGE" link="/supecial" />
   <HeaderButton buttonname="CONTACT" link="/contact" />
 </div>
+
+
+<Hamburger />
+
+<script>
+    import "../components/hamberger.js";
+</script>

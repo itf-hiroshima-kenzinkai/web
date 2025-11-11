@@ -9,7 +9,6 @@ const GoodsCarousel: React.FC = () => {
     <div className="container mx-auto px-4 py-8">
       <Swiper
         modules={[Pagination, Autoplay]}
-        slidesPerView={3}
         spaceBetween={30}
         loop={true}
         autoplay={{
@@ -19,6 +18,16 @@ const GoodsCarousel: React.FC = () => {
         pagination={{
           el: '#goods-carousel-pagination',
           clickable: true
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          448: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
         }}
       >
         {goodsData.map((item) => (

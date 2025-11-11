@@ -9,16 +9,21 @@ const pagetitle = '筑波大学広島県人会'
 <Layout pagetitle={pagetitle}>
   <div class="flex flex-col justify-center items-center">
     <div class="flex justify-center flex-col items-center">
-      <img src="/mainpic.png" class="w-[85%] hidden md:block" />
+      <img src="/mainpic.png" class="w-[95%] hidden md:block" />
 
-      <p class="w-[85%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">Univ.of TSUKUBA</p>
+      <p class="w-[95%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">Univ.of TSUKUBA</p>
       <img src="/mobile_mainpic.png" class="w-[85%] md:hidden" />
-      <p class="w-[85%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">HIROSHIMA</p>
-      <p class="w-[85%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">KENZINKAI</p>
+      <p class="w-[95%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">HIROSHIMA</p>
+      <p class="w-[95%] md:hidden font-[Jaro] text-5xl text-[#E93A3A] text-center">KENZINKAI</p>
     </div>
 
     <IndexContentCard title={'ABOUT'}>
-      <img src="/chibiCharaMomiji.png" class="absolute top-5 right-55 translate-x-full -translate-y-full w-1/8" />
+      <img
+        src="/chibiCharaMomiji.png"
+        class="absolute
+      md:top-5 md:right-55 md:translate-x-full md:-translate-y-full md:w-1/8
+      -top-20 right-10 w-1/4"
+      />
       <div class="hidden md:w-2/5 md:block">
         <img src="/about_image_noon.jpg" class="object-contain h-auto w-full mb-8" />
       </div>
@@ -37,13 +42,17 @@ const pagetitle = '筑波大学広島県人会'
         <p>広島出身者はもちろん、カープが好きな人、広島に興味がある人も大歓迎です！</p>
 
         <div class="items-end">
-          <p class="font-[Jaro] text-right text-4xl">MORE…→</p>
+          <div class="items-end">
+            <a href="/about" class="hover:underline">
+              <p class="font-[Jaro] text-right text-4xl my-4">MORE…→</p>
+            </a>
+          </div>
         </div>
       </div>
     </IndexContentCard>
 
     <IndexContentCard title={'GOODS'}>
-      <img src="/chibiCharaLemon.png" class="absolute top-0 left-1/6 -translate-y-1/2 w-1/4 h-auto z-10" />
+      <img src="/chibiCharaLemon.png" class="absolute top-0 left-1/6 -translate-y-1/2 md:w-1/4 h-auto z-10 w-1/2" />
       <GoodsCarousel client:only="react" />
     </IndexContentCard>
 

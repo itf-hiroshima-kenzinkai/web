@@ -4,7 +4,6 @@
 @import 'swiper/css';
 @import 'swiper/css/pagination';
 
-
 .swiper-pagination-bullet {
   background: #808080 !important;
   opacity: 1 !important;
@@ -14,5 +13,18 @@
   background: #ffffff !important;
 }
 @theme {
-  --font-zenmaru: "Zen Maru Gothic", sans-serif; 
+  --font-zenmaru: 'Zen Maru Gothic', sans-serif;
+}
+
+.text-stroke-red {
+  color: #fff;
+  text-shadow:
+    2px 2px 1px #e93a3a,
+    -2px 2px 1px #e93a3a,
+    2px -2px 1px #e93a3a,
+    -2px -2px 1px #e93a3a,
+    2px 0px 1px #e93a3a,
+    0px 2px 1px #e93a3a,
+    -2px 0px 1px #e93a3a,
+    0px -2px 1px #e93a3a;
 }

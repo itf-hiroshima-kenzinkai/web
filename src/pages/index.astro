@@ -36,9 +36,10 @@ const pagetitle = '筑波大学広島県人会'
         class="flex-col text-white tracking-wider w-full md:w-3/5 mx-0 my-0 text-sm md:text-xl md:leading-loose md:mx-12 md:my-8"
       >
         <p>筑波大学広島県人会は、50年の歴史があり、広島出身の学生を中心に活動している公式サークルです。</p>
-        <p>主な活動は、やどかり祭や雙峰祭で広島のお好み焼きを販売すること！</p>
-        <p>みんなで力を合わせてお好み焼きを焼き、その後の打ち上げで盛り上がるのは最高の思い出になります。</p>
-        <p>その他にも、有志でカープ観戦に行くなど、学年や学類を越えてアットホームな雰囲気で交流しています。</p>
+        <p class="hidden md:block">主な活動は、雙峰祭、やどかり祭でお好み焼きを焼くこと！</p>
+        <p class="hidden md:block">
+          その他、有志でカープ観戦に行くなど、学類や学年を超えてアットホームな雰囲気で交流しています！
+        </p>
         <p>広島出身者はもちろん、カープが好きな人、広島に興味がある人も大歓迎です！</p>
 
         <div class="items-end">
@@ -56,6 +57,10 @@ const pagetitle = '筑波大学広島県人会'
       <GoodsCarousel client:only="react" />
     </IndexContentCard>
 
-    <IndexContentCard title={'50thPAGE'}> 制作中 </IndexContentCard>
+    <IndexContentCard title={'50thPAGE'}>
+      <a href="/about" class="hover:underline">
+        <p class="font-[Jaro] text-right text-4xl my-4 text-white">MORE…→</p>
+      </a>
+    </IndexContentCard>
   </div>
 </Layout>

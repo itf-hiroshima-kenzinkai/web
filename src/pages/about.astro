@@ -10,7 +10,8 @@ const pagetitle = '広島県人会とは'
       <p class="w-[95%] font-[Jaro] text-6xl text-[#E93A3A] mb-8 md:text-8xl">A B O U T</p>
 
       <!--ここからPC版 -->
-      <div class="hidden md:block">
+
+      <div class="flex flex-row flex-wrap md:flex-row mb-4 hidden md:block">
         <div class="flex flex-row flex-wrap md:flex-row mb-4">
           <img src="/pic6.jpg" alt="Description of image 1" class="rounded-2xl shadow-lg w-3/8 object-cover m-4" />
 
@@ -26,86 +27,85 @@ const pagetitle = '広島県人会とは'
               故郷から遠く離れた地で、共通の要素を持ちながらも様々なバックグラウンドを持った仲間の集まりは、とても貴重で心強いです！
             </p>
           </div>
-
-          <div class="flex flex-row flex-wrap md:flex-row mb-4">
-            <div class="bg-[#E93A3A] font-zenmaru text-white rounded-2xl shadow-lg font-zenmaru w-1/3 mr-auto my-4 p-6">
-              <h3 class="text-3xl font-bold mb-4 font-zenmaru p-4">学園祭</h3>
-              <p class="text-base leading-relaxed font-zenmaru mx-4">
-                学園祭では故郷の魅力を多くの人に広めるべく、近年はオタフク様のご協賛をいただき、広島お好み焼きを提供しています。
-              </p>
-            </div>
+        </div>
+        <div class="flex flex-row flex-wrap md:flex-row mb-4">
+          <div class="bg-[#E93A3A] font-zenmaru text-white rounded-2xl shadow-lg font-zenmaru w-1/3 mr-auto my-4 p-6">
+            <h3 class="text-3xl font-bold mb-4 font-zenmaru p-4">学園祭</h3>
+            <p class="text-base leading-relaxed font-zenmaru mx-4">
+              学園祭では故郷の魅力を多くの人に広めるべく、近年はオタフク様のご協賛をいただき、広島お好み焼きを提供しています。
+            </p>
             <p class="text-base leading-relaxed font-zenmaru mx-4">
               約1か月前から説明会を開き、直前には大学近くのお好み焼き屋さんの鉄板をお借りして皆で焼き方の練習をします。
             </p>
             <p class="text-base leading-relaxed font-zenmaru mx-4">
               当日は慌ただしくもなりますが、たくさんの方に食べていただき、美味しいという反応をいただいた時は大変なことも忘れるほど嬉しいです。
             </p>
+            <p class="text-base leading-relaxed font-zenmaru mx-4">
+              最後に、筑波大学学園祭に訪れる方は、ぜひ広島県人会のブースにお越しください！
+            </p>
           </div>
-          <p class="text-base leading-relaxed font-zenmaru mx-4">
-            最後に、筑波大学学園祭に訪れる方は、ぜひ広島県人会のブースにお越しください！
-          </p>
+          <img src="/trimed_night.jpg" class="rounded-2xl shadow-lg object-cover w-5/8 my-4" />
         </div>
-        <img src="/trimed_night.jpg" class="rounded-2xl shadow-lg object-cover w-5/8 my-4" />
+
+        <div class="flex flex-col md:flex-row gap-8">
+          <img src="/pic3.jpg" class="rounded-2xl shadow-lg w-4/11 object-cover" />
+          <img src="/pic4.jpg" class="rounded-2xl shadow-lg w-7/12 ml-auto object-cover" />
+        </div>
       </div>
     </main>
 
-    <div class="flex flex-col md:flex-row gap-8">
-      <img src="/pic3.jpg" class="rounded-2xl shadow-lg w-4/11 object-cover" />
-      <img src="/pic4.jpg" class="rounded-2xl shadow-lg w-7/12 ml-auto object-cover" />
+    <!--ここからモバイル -->
+
+    <div class="block md:hidden p-4">
+      <div class="bg-[#E93A3A] text-white p-6 rounded-2xl shadow-xl mb-4">
+        <h2 class="text-2xl font-bold font-zenmaru mb-4">概要</h2>
+        <p class="text-sm leading-relaxed font-zenmaru">
+          筑波大学広島県人会は、広島にゆかりがある学生が集まった筑波大学公認一般学生団体です。
+          <p class="text-sm leading-relaxed font-zenmaru">
+            毎年、学園祭での広島お好み焼きの出店や、カープ観戦やご飯会など学類や学年の壁を越えた多様な活動を行っています。
+          </p>
+          <p class="text-sm leading-relaxed font-zenmaru">
+            故郷から遠く離れた地で、共通の要素を持ちながらも様々なバックグラウンドを持った仲間の集まりは、とても貴重で心強いです！
+          </p>
+        </p>
+      </div>
+
+      <div class="flex flex-col space-y-4 mb-4">
+        <div class="flex gap-4">
+          <div class="w-7/15">
+            <img src="/pic6.jpg" class="w-full h-40 rounded-2xl shadow-lg object-cover" alt="イベントの様子1" />
+          </div>
+          <div class="w-7/15">
+            <img src="/pic2.jpg" class="w-full h-40 rounded-2xl shadow-lg object-cover" alt="イベントの様子2" />
+          </div>
+        </div>
+
+        <div class="bg-[#E93A3A] text-white p-6 rounded-2xl shadow-xl mb-6">
+          <h2 class="text-2xl font-bold mb-4 font-zenmaru">学園祭</h2>
+          <p class="text-sm leading-relaxed font-zenmaru">
+            学園祭では故郷の魅力を多くの人に広めるべく、近年はオタフク様のご協賛をいただき、広島お好み焼きを提供しています。
+          </p>
+          <p class="text-sm leading-relaxed font-zenmaru">
+            約1か月前から説明会を開き、直前には大学近くのお好み焼き屋さんの鉄板をお借りして皆で焼き方の練習をします。
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <img src="/pic3.jpg" class="w-full h-40 rounded-2xl shadow-lg object-cover" alt="イベントの様子3" />
+        </div>
+
+        <div class="bg-[#E93A3A] text-white p-6 rounded-2xl shadow-xl">
+          <p class="text-sm leading-relaxed font-zenmaru">
+            当日は慌ただしくもなりますが、たくさんの方に食べていただき、美味しいという反応をいただいた時は大変なことも忘れるほど嬉しいです。
+          </p>
+          <p class="text-sm leading-relaxed font-zenmaru">
+            最後に、筑波大学学園祭に訪れる方は、ぜひ広島県人会のブースにお越しください！
+          </p>
+        </div>
+        <div class="mb-6">
+          <img src="/pic4.jpg" class="w-full h-40 rounded-2xl shadow-lg object-cover" alt="イベントの様子3" />
+        </div>
+      </div>
     </div>
   </body>
-
-  <!--ここからモバイル -->
-
-  <div class="block md:hidden">
-    <div class="bg-[#E93A3A] text-white p-6 rounded-2xl shadow-xl mb-4">
-      <h2 class="text-2xl font-bold font-zenmaru mb-4">概要</h2>
-      <p class="text-sm leading-relaxed font-zenmaru">
-        筑波大学広島県人会は、広島にゆかりがある学生が集まった筑波大学公認一般学生団体です。
-        <p class="text-sm leading-relaxed font-zenmaru">
-          毎年、学園祭での広島お好み焼きの出店や、カープ観戦やご飯会など学類や学年の壁を越えた多様な活動を行っています。
-        </p>
-        <p class="text-sm leading-relaxed font-zenmaru">
-          故郷から遠く離れた地で、共通の要素を持ちながらも様々なバックグラウンドを持った仲間の集まりは、とても貴重で心強いです！
-        </p>
-      </p>
-    </div>
-
-    <div class="flex flex-col space-y-4 mb-4">
-      <div class="flex gap-4">
-        <div class="w-7/15">
-          <img src="/pic6.jpg" class="w-full h-40 rounded-2xl shadow-lg object-cover" alt="イベントの様子1" />
-        </div>
-        <div class="w-7/15">
-          <img src="/pic2.jpg" class="w-full h-40 rounded-2xl shadow-lg object-cover" alt="イベントの様子2" />
-        </div>
-      </div>
-
-      <div class="bg-[#E93A3A] text-white p-6 rounded-2xl shadow-xl mb-6">
-        <h2 class="text-2xl font-bold mb-4 font-zenmaru">学園祭</h2>
-        <p class="text-sm leading-relaxed font-zenmaru">
-          学園祭では故郷の魅力を多くの人に広めるべく、近年はオタフク様のご協賛をいただき、広島お好み焼きを提供しています。
-        </p>
-        <p class="text-sm leading-relaxed font-zenmaru">
-          約1か月前から説明会を開き、直前には大学近くのお好み焼き屋さんの鉄板をお借りして皆で焼き方の練習をします。
-        </p>
-      </div>
-
-      <div class="mb-6">
-        <img src="/pic3.jpg" class="w-full h-40 rounded-2xl shadow-lg object-cover" alt="イベントの様子3" />
-      </div>
-
-      <div class="bg-[#E93A3A] text-white p-6 rounded-2xl shadow-xl">
-        <p class="text-sm leading-relaxed font-zenmaru">
-          当日は慌ただしくもなりますが、たくさんの方に食べていただき、美味しいという反応をいただいた時は大変なことも忘れるほど嬉しいです。
-        </p>
-        <p class="text-sm leading-relaxed font-zenmaru">
-          最後に、筑波大学学園祭に訪れる方は、ぜひ広島県人会のブースにお越しください！
-        </p>
-      </div>
-      <div class="mb-6">
-        <img src="/pic4.jpg" class="w-full h-40 rounded-2xl shadow-lg object-cover" alt="イベントの様子3" />
-      </div>
-    </div>
-  </div>
 </Layout>

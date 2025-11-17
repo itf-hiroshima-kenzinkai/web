@@ -1,7 +1,7 @@
 # web
 
 webページのリポジトリです。
-git clone して 、 npm install してください。
+git clone -> npm install
 mainブランチには直接プッシュせず、作業内容がわかるブランチ名(ex:feat/mainpage など)を切って、作業完了したらプルリクを立てておいてください。
 
 # Astro Starter Kit: Basics

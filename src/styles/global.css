@@ -29,7 +29,6 @@
     0px -2px 1px #e93a3a;
 }
 
-
 .text-stroke-white {
   color: #e93a3a;
   text-shadow:
@@ -43,14 +42,21 @@
     0px -2px 1px #fff;
 }
 
-
 @keyframes slideInLeft {
-  0% { transform: translateX(-50px); }
-  100% {  transform: translateX(0); }
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 @keyframes slideInRight {
-  0% { transform: translateX(50px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .animate-slide-in-left {

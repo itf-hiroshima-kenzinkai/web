@@ -6,7 +6,7 @@ const ProductCard: React.FC<GoodsItem> = ({ imageUrl, price, description, linkUr
       <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="block group">
         <div className=" bg-[#E93A3A] overflow-hidden ">
           <div className="w-full aspect-square">
-            <img src={imageUrl} alt={description} className="object-cover w-full" />
+            <img src={imageUrl} alt={description} className="object-cover w-full bg-white" />
           </div>
           <div className="p-4 text-center">
             <p className="text-3xl font-bold text-white text-left">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import '@fontsource/jaro';
 @import '@fontsource/zen-maru-gothic';
 @import 'tailwindcss';
 @import 'swiper/css';
@@ -14,6 +14,7 @@
 }
 @theme {
   --font-zenmaru: 'Zen Maru Gothic', sans-serif;
+  --font-jaro: 'Jaro', system-ui;
 }
 
 .text-stroke-red {
@@ -27,4 +28,41 @@
     0px 2px 1px #e93a3a,
     -2px 0px 1px #e93a3a,
     0px -2px 1px #e93a3a;
+}
+
+.text-stroke-white {
+  color: #e93a3a;
+  text-shadow:
+    2px 2px 1px #fff,
+    -2px 2px 1px #fff,
+    2px -2px 1px #fff,
+    -2px -2px 1px #fff,
+    2px 0px 1px #fff,
+    0px 2px 1px #fff,
+    -2px 0px 1px #fff,
+    0px -2px 1px #fff;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 2s ease-out forwards;
+}
+.animate-slide-in-right {
+  animation: slideInRight 2s ease-out forwards;
 }

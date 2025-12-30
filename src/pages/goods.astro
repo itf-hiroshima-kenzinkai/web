@@ -8,7 +8,7 @@ const pagetitle = 'グッズ'
 <Layout pagetitle={pagetitle}>
   <body class="bg-white text-red-600">
     <main class="max-w-7xl mx-auto px-6 py-12">
-      <p class="w-[95%] font-[Jaro] text-6xl text-[#E93A3A] mb-8 md:text-8xl">G O O D S</p>
+      <p class="w-[95%] font-jaro text-6xl text-[#E93A3A] mb-8 md:text-8xl">G O O D S</p>
       <p class="text-center">
         <a href="https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/products?sort=sales" class="inline-block">
           <button
@@ -18,7 +18,7 @@ const pagetitle = 'グッズ'
           after:content-[''] after:absolute after:left-1/2 after:mt-2 after:bottom-[-6px] after:w-[90%] after:h-[6px] after:bg-[#E93A3A] after:translate-x-[-50%]
           hover:after:opacity-0"
           >
-            <div class="px-2 py-1">ショップを見る</div>
+            <div class="px-2 py-1">ショップを見る→</div>
           </button>
         </a>
       </p>
@@ -28,40 +28,20 @@ const pagetitle = 'グッズ'
       >
         デザイン一覧
       </div>
-      <div class="flex flex-wrap justify-center">
-        <div class="w-full sm:w-1/2 md:w-1/3 p-4">
-          <div class="rounded-2xl shadow-lg overflow-hidden bg-white">
-            <img src="/goods_1.png" alt="画像1" class="w-full aspect-[4/3] object-contain" />
-            <div class="bg-[#E93A3A] font-zenmaru text-white text-sm p-4">
-              <p>
-                広島県人会の活動のイメージをポップなキャラクターとして表現。筑波大学校章の「五三の桐」・広島名物もみじ饅頭を持っていたり、学園祭で広島お好み焼きの提供をする様子も。背景には広島県のシルエットを配置した。筑波の紫、広島の赤をメインに用いて、筑波と広島が融合したようなデザインになっている。
-              </p>
-              <br />
-              <span class="font-bold">販売グッズ</span>
-              <p>
-                <a
-                  href="https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19129953/face-towel/free/white"
-                  class="hover:underline decoration-white">・フェイスタオル</a>
-              </p>
-              <p>
-                <a
-                  href="https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19130169/mug/m/white"
-                  class="hover:underline decoration-white">・マグカップ</a>
-              </p>
-              <p>
-                <a
-                  href="https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19130322/clear-file-folder/a4/clear"
-                  class="hover:underline decoration-white">・クリアファイル</a>
-              </p>
-              <p>
-                <a
-                  href="https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19130322/tote-bag/m/natural"
-                  class="hover:underline decoration-white">・トートバッグ</a>
-              </p>
-            </div>
-          </div>
-        </div>
 
+      <div class="flex flex-wrap justify-center">
+        <GoodsDesign
+          sentence="広島県人会の活動のイメージをポップなキャラクターとして表現。筑波大学校章の「五三の桐」・広島名物もみじ饅頭を持っていたり、学園祭で広島お好み焼きの提供をする様子も。背景には広島県のシルエットを配置した。筑波の紫、広島の赤をメインに用いて、筑波と広島が融合したようなデザインになっている。"
+          number="1"
+          link1="https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19129953/face-towel/free/white"
+          link2="https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19130169/mug/m/white"
+          link3="https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19130322/clear-file-folder/a4/clear"
+          link4="https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19130322/tote-bag/m/natural"
+          goods1="フェイスタオル"
+          goods2="マグカップ"
+          goods3="クリアファイル"
+          goods4="トートバッグ"
+        />
         <GoodsDesign
           sentence="広島といえば！のお好み焼きをベースに広島のシンボルとつくばのシンボルをぎゅっと詰め込んだデザイン。垂れたお好みソースがHIROSHIMAの文字を作っているよう繋がり・揺らぎのある描き方とした。「A」の三角部分がハートになっているのもポイント。"
           number="2"

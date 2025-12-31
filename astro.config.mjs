@@ -10,5 +10,6 @@ export default defineConfig({
   integrations: [react(), icon()],
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+  site: 'https://tsukuhiro.com',
 })

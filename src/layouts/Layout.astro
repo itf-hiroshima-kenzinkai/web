@@ -2,32 +2,35 @@
 import '../styles/global.css'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-const { pagetitle } = Astro.props
+const { pagetitle , description = "筑波大学広島県人会の公式サイトです。" } = Astro.props;
+const ogImageUrl = new URL('/mainpic.png', Astro.site);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/mainpic.svg" />
-    <meta charset="utf-8" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://mainpic.png" />
-    <meta property="og:image" content="https://mainpic.png" />
-    <meta property="og:image:width" content="1281" />
-    <meta property="og:image:height" content="721" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="後で県人会の" />
-
-    <link rel="icon" type="image/svg+xml" href="/mainpic.svg" />
-    <meta name="twitter:title" content={pagetitle} />
-    <meta property="og:title" content={pagetitle} />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="google-adsense-account" content="ca-pub-7867559315282562" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{pagetitle}</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    
+    <link rel="icon" type="image/svg+xml" href="/mainpic.svg" />
+
+    <meta property="og:site_name" content="筑波大学広島県人会" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={pagetitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="2800" />
+    <meta property="og:image:height" content="2124" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pagetitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
   </head>
 
   <body class="bg-white">

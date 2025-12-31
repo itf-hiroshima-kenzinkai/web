@@ -9,9 +9,13 @@ const { title, link, name } = Astro.props
   <Icon name={name} class="w-10 h-10 text-red-600 mb-2" />
   <h2 class="text-xl font-bold text-gray-700">{title}</h2>
   {
-    link && (
-      <a href={link} class="mt-2 text-red-600 text-center hover:underline ">
+    link ? (
+      <a href={link} class="mt-2 text-red-600 text-center hover:underline">
         {link}
+      </a>
+    ) : (
+      <a href="mailto:kenjinkai.hiroshima@gmail.com" class="mt-2 text-red-600 text-center hover:underline">
+        kenjinkai.hiroshima@gmail.com
       </a>
     )
   }

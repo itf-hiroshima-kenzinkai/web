@@ -14,7 +14,7 @@
 }
 @theme {
   --font-zenmaru: 'Zen Maru Gothic', sans-serif;
-  --font-jaro: 'Jaro', system-ui;
+  --font-jaro: 'Jaro';
 }
 
 .text-stroke-red {

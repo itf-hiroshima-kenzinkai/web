@@ -77,5 +77,12 @@ export const goodsData: GoodsItem[] = [
     price: 2079,
     description: '会員風マグカップ',
     linkUrl: 'https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19130375/mug/m/white'
+  },
+  {
+    id: 12,
+    imageUrl: '/goods_c12.png',
+    price: 2860,
+    description: 'HIROSHIMA×TSUKUBA おこのみやきトートバッグ',
+    linkUrl: 'https://suzuri.jp/Hiroshima_kenjinkai_UnivTsukuba/19130375/mug/m/white'
   }
 ]

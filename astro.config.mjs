@@ -11,5 +11,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'https://tsukuhiroweb.vocello-vflower.workers.dev',
+  site: 'https://tsukuhiro.com'
 })

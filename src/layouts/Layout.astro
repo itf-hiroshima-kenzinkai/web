@@ -2,9 +2,9 @@
 import '../styles/global.css'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-const { pagetitle , description = "筑波大学広島県人会の公式サイトです。" } = Astro.props;
-const ogImageUrl = new URL('/mainpic.png', Astro.site);
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const { pagetitle, description = '筑波大学広島県人会の公式サイトです。' } = Astro.props
+const ogImageUrl = new URL('/thumbnail.png', Astro.site)
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site)
 ---
 
 <!doctype html>
@@ -15,7 +15,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <title>{pagetitle}</title>
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
-    
+
     <link rel="icon" type="image/svg+xml" href="/mainpic.svg" />
 
     <meta property="og:site_name" content="筑波大学広島県人会" />
@@ -24,8 +24,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={pagetitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageUrl} />
-    <meta property="og:image:width" content="2800" />
-    <meta property="og:image:height" content="2124" />
+    <meta property="og:image:width" content="1936" />
+    <meta property="og:image:height" content="1094" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pagetitle} />

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.3.1",
+    "@astrojs/sitemap": "^3.6.0",
     "@fontsource-variable/jaro": "^5.2.7",
     "@fontsource/jaro": "^5.2.7",
     "@fontsource/zen-maru-gothic": "^5.2.8",

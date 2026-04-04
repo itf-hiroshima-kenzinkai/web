@@ -5,6 +5,11 @@ import IndexContentCard from '../components/IndexContentCard.astro'
 import GoodsCarousel from '../components/GoodsCarousel'
 const pagetitle = '筑波大学広島県人会'
 const aboutImageClass = 'object-contain h-auto w-full mb-8 md:mb-0 md:w-2/5'
+const newsItems = [
+  { date: '2026.04.04', label: 'お知らせ', title: 'トップページにNEWS欄を追加しました' },
+  { date: '2026.03.20', label: 'イベント', title: '新歓向けの交流会を準備中です' },
+  { date: '2026.03.01', label: '更新', title: '50th PAGEの案内を更新しました' }
+]
 ---
 
 <Layout pagetitle={pagetitle}>
@@ -25,6 +30,23 @@ const aboutImageClass = 'object-contain h-auto w-full mb-8 md:mb-0 md:w-2/5'
         <p>KENJINKAI</p>
       </div>
     </div>
+
+    <IndexContentCard title={'NEWS'}>
+      <div class="w-full text-white tracking-wider text-sm md:text-lg md:leading-loose">
+        <ul class="space-y-4 md:space-y-5">
+          {
+            newsItems.map((item) => (
+              <li class="rounded-2xl border border-white/20 bg-white/10 px-4 py-3 md:px-6 md:py-4">
+                <p class="text-xs md:text-sm text-white/80">
+                  {item.date} / {item.label}
+                </p>
+                <p class="mt-1 font-semibold">{item.title}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </IndexContentCard>
 
     <IndexContentCard title={'ABOUT'}>
       <img

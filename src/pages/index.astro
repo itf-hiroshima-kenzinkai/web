@@ -4,6 +4,7 @@ import '../styles/global.css'
 import IndexContentCard from '../components/IndexContentCard.astro'
 import GoodsCarousel from '../components/GoodsCarousel'
 const pagetitle = '筑波大学広島県人会'
+const aboutImageClass = 'object-contain h-auto w-full mb-8 md:mb-0 md:w-2/5'
 ---
 
 <Layout pagetitle={pagetitle}>
@@ -33,13 +34,7 @@ const pagetitle = '筑波大学広島県人会'
       -top-20 right-10 w-1/4"
       />
 
-      <div class="hidden md:w-2/5 md:block">
-        <img src="/about_image_noon.jpg" class="object-contain h-auto w-full mb-8" />
-      </div>
-
-      <div class="md:hidden w-full mb-8">
-        <img src="/about_image_noon.jpg" class="object-contain h-auto w-full" />
-      </div>
+      <img src="/about_image_noon.jpg" class={aboutImageClass} />
 
       <div class="flex-col text-white tracking-wider w-full md:w-3/5 my-0 text-sm md:text-xl md:leading-loose md:pt-12">
         <p>筑波大学広島県人会は、50年の歴史があり、広島出身の学生を中心に活動している公式サークルです。</p>
@@ -49,12 +44,10 @@ const pagetitle = '筑波大学広島県人会'
         </p>
         <p>広島出身者はもちろん、カープが好きな人、広島に興味がある人も大歓迎です！</p>
 
-        <div class="items-end">
-          <div class="items-end">
-            <a href="/about">
-              <p class="font-jaro text-right text-4xl my-4 hover:underline">MORE…→</p>
-            </a>
-          </div>
+        <div class="flex justify-end">
+          <a href="/about" class="font-jaro text-right text-4xl my-4 hover:underline">
+            MORE…→
+          </a>
         </div>
       </div>
     </IndexContentCard>

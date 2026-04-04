@@ -4,7 +4,8 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 const { pagetitle, description = '筑波大学広島県人会の公式サイトです。' } = Astro.props
 const siteTitle = '筑波大学広島県人会'
-const fullTitle = pagetitle === siteTitle ? siteTitle : `${siteTitle} | ${pagetitle}`
+const pageTitle = pagetitle ?? siteTitle
+const fullTitle = pageTitle === siteTitle ? siteTitle : `${siteTitle} | ${pageTitle}`
 const ogImageUrl = new URL('/thumbnail.png', Astro.site)
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site)
 ---
@@ -36,12 +37,10 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site)
   </head>
 
   <body class="bg-white">
-    <div class="flex justify-end px-4 pt-2">
+    <header class="flex justify-end px-4 pt-2">
       <Header />
-    </div>
+    </header>
     <slot />
-    <div>
-      <Footer />
-    </div>
+    <Footer />
   </body>
 </html>

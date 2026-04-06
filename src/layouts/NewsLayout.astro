@@ -6,6 +6,15 @@ const { pagetitle = 'ニュース', description } = Astro.props
 
 <Layout pagetitle={pagetitle} description={description}>
   <main class="mx-auto w-full max-w-5xl px-4 py-10">
-    <slot />
+    <div
+      class="prose text-slate-900 leading-tight
+  max-w-full
+  prose-h1:font-bold
+  prose-a:text-blue-600
+  prose-p:
+  prose-img:rounded-xl"
+    >
+      <slot />
+    </div>
   </main>
 </Layout>

@@ -1,14 +1,16 @@
 ---
 const posts = await Astro.glob('../../pages/news/*.md')
 
-const cards = posts.map((post) => ({
-  url: post.url ?? '',
-  title: post.frontmatter?.title ?? '',
-  description: post.frontmatter?.description ?? '',
-  imageUrl: post.frontmatter?.image?.url ?? '',
-  imageAlt: post.frontmatter?.image?.alt ?? '',
-  pubDate: post.frontmatter?.pubDate ?? ''
-}))
+const cards = posts
+  .map((post) => ({
+    url: post.url ?? '',
+    title: post.frontmatter?.title ?? '',
+    description: post.frontmatter?.description ?? '',
+    imageUrl: post.frontmatter?.image?.url ?? '',
+    imageAlt: post.frontmatter?.image?.alt ?? '',
+    pubDate: post.frontmatter?.pubDate ?? ''
+  }))
+  .sort((a, b) => b.pubDate.localeCompare(a.pubDate))
 ---
 
 <section class="my-12 mx-auto max-w-[80%]">
@@ -18,7 +20,7 @@ const cards = posts.map((post) => ({
     ) : (
       <div class="flex flex-col gap-4">
         {cards.map((card) => (
-          <article class="rounded-4xl bg-white border-2 border-[#E93A3A] overflow-hidden">
+          <article class="rounded-4xl bg-white border-4 border-[#E93A3A] overflow-hidden">
             <a class="flex items-center gap-4 px-8 py-4 text-gray-700 no-underline" href={card.url}>
               <div class="min-w-0 ml-16 flex-1">
                 {card.pubDate ? <p class="mb-1 text-xs text-gray-700">{card.pubDate}</p> : null}

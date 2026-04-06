@@ -11,7 +11,7 @@ const cards = posts.map((post) => ({
 }))
 ---
 
-<section class=" my-6  h-full rounded-2xl bg-red-600 p-4  mr-8 ml-8 sm:p-6">
+<section class=" my-12 max-w-[80%] mx-auto h-full rounded-4xl bg-[#E93A3A] ">
   {
     cards.length === 0 ? (
       <p class="text-sm text-white/80">ニュースがまだありません。</p>
@@ -19,14 +19,14 @@ const cards = posts.map((post) => ({
       cards.map((card) => (
         <article class="border-b border-white/20  overflow-hidden ">
           <a class="flex items-center gap-4 mx-auto text-inherit no-underline px-8" href={card.url}>
-            <div class="min-w-0 flex-1 max-">
+            <div class="min-w-0 ml-16 flex-1">
               {card.pubDate ? <p class="mb-1 text-xs text-slate-500">{card.pubDate}</p> : null}
               <h3 class="mb-1 text-base font-semibold text-white">{card.title}</h3>
               {card.description ? <p class="text-sm leading-relaxed text-white/80">{card.description}</p> : null}
             </div>
 
             {card.imageUrl ? (
-              <div class="w-1/4 h-[20%] flex-shrink-0">
+              <div class="w-1/4 h-[20%] flex-shrink-0 mx-16 my-2 bg-white">
                 <img
                   class="h-full w-full object-cover rounded"
                   src={card.imageUrl}

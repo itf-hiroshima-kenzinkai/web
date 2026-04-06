@@ -11,33 +11,35 @@ const cards = posts.map((post) => ({
 }))
 ---
 
-<section class=" my-12 max-w-[80%] mx-auto h-full rounded-4xl bg-[#E93A3A] ">
+<section class="my-12 mx-auto max-w-[80%]">
   {
     cards.length === 0 ? (
-      <p class="text-sm text-white/80">ニュースがまだありません。</p>
+      <p class="text-sm text-gray-700">ニュースがまだありません。</p>
     ) : (
-      cards.map((card) => (
-        <article class="border-b border-white/20  overflow-hidden ">
-          <a class="flex items-center gap-4 mx-auto text-inherit no-underline px-8" href={card.url}>
-            <div class="min-w-0 ml-16 flex-1">
-              {card.pubDate ? <p class="mb-1 text-xs text-slate-500">{card.pubDate}</p> : null}
-              <h3 class="mb-1 text-base font-semibold text-white">{card.title}</h3>
-              {card.description ? <p class="text-sm leading-relaxed text-white/80">{card.description}</p> : null}
-            </div>
-
-            {card.imageUrl ? (
-              <div class="w-1/4 h-[20%] flex-shrink-0 mx-16 my-2 bg-white">
-                <img
-                  class="h-full w-full object-cover rounded"
-                  src={card.imageUrl}
-                  alt={card.imageAlt || card.title}
-                  loading="lazy"
-                />
+      <div class="flex flex-col gap-4">
+        {cards.map((card) => (
+          <article class="rounded-4xl bg-white border-2 border-[#E93A3A] overflow-hidden">
+            <a class="flex items-center gap-4 px-8 py-4 text-gray-700 no-underline" href={card.url}>
+              <div class="min-w-0 ml-16 flex-1">
+                {card.pubDate ? <p class="mb-1 text-xs text-gray-700">{card.pubDate}</p> : null}
+                <h3 class="mb-1 text-base font-semibold text-gray-700">{card.title}</h3>
+                {card.description ? <p class="text-sm leading-relaxed text-gray-700">{card.description}</p> : null}
               </div>
-            ) : null}
-          </a>
-        </article>
-      ))
+
+              {card.imageUrl ? (
+                <div class="w-1/4 h-[20%] flex-shrink-0 mx-16 my-2 bg-white">
+                  <img
+                    class="h-full w-full object-cover rounded"
+                    src={card.imageUrl}
+                    alt={card.imageAlt || card.title}
+                    loading="lazy"
+                  />
+                </div>
+              ) : null}
+            </a>
+          </article>
+        ))}
+      </div>
     )
   }
 </section>

@@ -13,7 +13,7 @@ const cards = posts
   .sort((a, b) => b.pubDate.localeCompare(a.pubDate))
 ---
 
-<section class="my-12 mx-auto">
+<section class="my-12 mx-auto font-zenmaru">
   {
     cards.length === 0 ? (
       <p class="text-sm text-gray-700">ニュースがまだありません。</p>
@@ -24,12 +24,12 @@ const cards = posts
             <a class="flex items-center gap-4 px-8 py-4 text-gray-700 no-underline" href={card.url}>
               <div class="min-w-0 ml-16 flex-1">
                 {card.pubDate ? <p class="mb-1 text-xs text-gray-700">{card.pubDate}</p> : null}
-                <h3 class="mb-1 text-base font-semibold text-gray-700">{card.title}</h3>
+                <p class="font-semibold text-gray-700 text-xl">{card.title}</p>
                 {card.description ? <p class="text-sm leading-relaxed text-gray-700">{card.description}</p> : null}
               </div>
 
               {card.imageUrl ? (
-                <div class="w-1/4 h-[20%] flex-shrink-0 mx-16 my-2 bg-white">
+                <div class="w-1/5 flex-shrink-0 mx-20 my-2 bg-white">
                   <img
                     class="h-full w-full object-cover rounded"
                     src={card.imageUrl}

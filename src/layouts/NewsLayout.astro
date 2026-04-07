@@ -1,13 +1,16 @@
 ---
 import Layout from './Layout.astro'
 
-const { pagetitle = 'ニュース', description } = Astro.props
+const { frontmatter} = Astro.props
 ---
 
-<Layout pagetitle={pagetitle} description={description}>
-  <main class="max-w-7xl mx-auto px-6 py-12 prose">
-    <div class ="border border-[#E93A3A] border-4 rounded-2xl py-12 px-20 font-zenmaru">
-      <p>{pagetitle}</p>
+<Layout pagetitle={frontmatter.title} description={frontmatter.description}>
+  <main class="max-w-7xl mx-auto px-6 prose">
+     <p class="font-jaro text-6xl text-[#E93A3A] mb-8 md:text-8xl">NEWS</p>
+     
+    <div class ="border border-[#E93A3A] border-4 rounded-2xl px-20 font-zenmaru text-gray-700">
+        <p class = "text-4xl font-bold mb-4">{frontmatter.title}</p>
+        <p class = "mb-12">{frontmatter.pubDate}</p>   
       <slot />
     </div>
   </main>

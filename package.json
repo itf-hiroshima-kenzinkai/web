@@ -16,6 +16,7 @@
     "@fontsource/jaro": "^5.2.7",
     "@fontsource/zen-maru-gothic": "^5.2.8",
     "@iconify-json/mdi": "^1.2.3",
+    "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.0.17",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",

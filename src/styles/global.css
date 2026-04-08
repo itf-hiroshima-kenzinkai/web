@@ -12,6 +12,7 @@
 .swiper-pagination-bullet-active {
   background: #ffffff !important;
 }
+@plugin "@tailwindcss/typography";
 @theme {
   --font-zenmaru: 'Zen Maru Gothic', sans-serif;
   --font-jaro: 'Jaro';
